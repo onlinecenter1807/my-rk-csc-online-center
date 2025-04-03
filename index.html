@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK COMMON SERVICE CENTER</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- हेडर -->
+    <header>
+        <div class="logo">
+            <h1>RK COMMON SERVICE CENTER</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">होम</a></li>
+                <li><a href="#services">सर्विसेज</a></li>
+                <li><a href="#apply">अप्लाई करें</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- होम सेक्शन -->
+    <section id="home">
+        <h2>हमारे सेंटर में आपका स्वागत है!</h2>
+        <p>हम आपके लिए कई तरह की सर्विसेज प्रदान करते हैं। अपनी जरूरत के अनुसार सर्विस चुनें और आज ही अप्लाई करें।</p>
+    </section>
+
+    <!-- सर्विसेज सेक्शन -->
+    <section id="services">
+        <h2>हमारी सर्विसेज</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>जाति आय निवास </h3>
+                <p>लोक सेवा केन्द्र की सभी सेवाये ।</p>
+            </div>
+            <div class="service-box">
+                <h3>पैन कार्ड </h3>
+                <p>पैन कार्ड के लिए फोटो एवं आधार कार्ड ।</p>
+            </div>
+            <div class="service-box">
+                <h3>वोटर आइडी  कार्ड , श्रम कार्ड , बिजली बिल भुगतान,रीचार्ज  के.सी.सी., लोन, पीएम किसान पंजीयन, एवं केवाईसी   </h3>
+                <p>सभी प्रकार की अनलाइन सेवा उपलब्ध है ।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- अप्लाई फॉर्म सेक्शन -->
+    <section id="apply">
+        <h2>सर्विस के लिए अप्लाई करें</h2>
+        <form id="applyForm">
+            <label for="name">नाम:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">ईमेल:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">सर्विस चुनें:</label>
+            <select id="service" name="service" required>
+                <option value="">--सर्विस चुनें--</option>
+                <option value="service1">जाति, आय, निवास </option>
+                <option value="service2">पैन कार्ड,  वोटर कार्ड,  श्रम कार्ड </option>
+                <option value="service3">अन्य </option>
+            </select>
+
+            <label for="message">संदेश:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">अप्लाई करें</button>
+        </form>
+    </section>
+
+    <!-- फूटर -->
+    <footer id="contact">
+        <p>संपर्क करें: +91-7489588261 | email-rkcsckorba.com</p>
+        <p>हमें फॉलो करें: <a href="#">फेसबुक</a> | <a href="https://www.instagram.com/official_rk_yadaw/?hl=en">इंस्टाग्राम</a></p>
+        <p>© 2025 RK CSC DADARKALA। सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
